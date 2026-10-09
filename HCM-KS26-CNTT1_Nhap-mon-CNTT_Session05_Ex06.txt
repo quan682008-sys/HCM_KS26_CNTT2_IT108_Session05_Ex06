@@ -1,0 +1,68 @@
+﻿Bước 1 : mkdir smart-farm/bin, smart-farm/config, smart-farm/data
+Bước 2 : ni smart-farm\config\.env
+attrib +h smart-farm\config\.env 
+ls smart-farm\config -Force 
+
+Get -ChildItem thông thường không nhìn thấy file .env vì .env được gán là file ẩn nên get-childItem chỉ tìm thấy những thư mục bình thường không tìm file ẩn
+
+
+Bước 3 : cp C:\Users\Public\template.ps1 ~\smart-farm\bin\pump_control.ps1
+
+
+Bước 4 : ls smart-farm -Recurse -Force 
+
+
+
+
+
+
+
+
+
+
+Nhật ký (Log) các câu lệnh PowerShell đã thực hiện.
+mkdir smart-farm/bin, smart-farm/config, smart-farm/data
+
+
+	 tạo thư mục gồm 3 thư mục con bin,config và data
+	ni smart-farm\config\.env
+attrib +h smart-farm\config\.env 
+ls smart-farm\config -Force 
+
+	tạo file ẩn 
+và xác nhận file
+	cp C:\Users\Public\template.ps1 ~\smart-farm\bin\pump_control.ps1
+ls smart-farm-Recurse -Force 
+
+
+
+
+	sao chép và đổi tên file
+	ls smart-farm-Recurse -Force 
+
+
+	mở tất cả các thư mục trong smart-farm
+	
+
+
+
+Bản phân tích luồng IPO cho toàn bộ quá trình thiết lập căn cứ số này.
+
+
+
+
+
+
+	
+
+	Input
+	Tạo thư mục “ mkdir smart-farm/bin, smart-farm/config, smart-farm/data
+”
+Tạo file ẩn “ni smart-farm\config\.env 
+attrib +h smart-farm\config\.env 
+ls smart-farm\config -Force 
+”
+	Process
+	mkdir tạo cây thư mục, (2) ni tạo .env + attrib +h ẩn file, (3) cp sao chép và đổi tên, (4) ls -Recurse -Force kiểm tra 
+	Output
+	Cấu trúc smart-farm/ gồm bin/pump_control.ps1, config/.env (ẩn), data/ (rỗng)
